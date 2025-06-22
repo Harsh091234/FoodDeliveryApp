@@ -44,7 +44,7 @@ const Home = () => {
     <div className='min-h-screen flex flex-col bg-stone-950'>
       {/* Navbar */}
       <div className="bg-stone-700 text-white py-2 px-4">
-        <nav className="flex flex-wrap items-center max-[799px]:justify-between w-full gap-4">
+        <nav className="flex flex-wrap items-center max-[830px]:justify-between w-full gap-4">
           {/* Logo */}
           <div className="text-3xl font-bold italic">GoFood</div>
 
@@ -68,9 +68,8 @@ const Home = () => {
               )}
             </ul>
           </div>
-
           {/* Search Bar - Desktop */}
-          <div className="relative hidden min-[800px]:flex items-center">
+          <div className="flex items-center relative max-[830px]:hidden">
             <input
               type="search"
               placeholder="Type here to search"
