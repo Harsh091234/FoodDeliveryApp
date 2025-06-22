@@ -50,7 +50,7 @@ return (
                         alt={slide.label}
                         className="w-full h-full object-cover"
                     />
-                    <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4">
+                    <div className="absolute bottom-0 left-0 w-full opacity-90 bg-stone-700 bg-opacity-50 text-white p-4">
                         <h5 className="text-xl font-bold">{slide.label}</h5>
                         <p className="text-sm">{slide.description}</p>
                     </div>
