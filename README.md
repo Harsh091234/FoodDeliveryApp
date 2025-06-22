@@ -35,21 +35,49 @@ An interactive **Food Delivery Web App** built using the **MERN Stack (MongoDB, 
 
 ## 📸 Screenshots
  
-![](public/images/1.png)
 
-![](public/images/2.png)
+<details>
+  <summary>📷 Click to expand screenshots</summary>
 
-![](public/images/3.png)
+### 🏠 1. Home Page  
+![Home](public/images/1.png)
 
-![](public/images/4.png)
+---
 
-![](public/images/5.png)
+### 🔍 2. Search Food  
+![Search Food](public/images/2.png)
 
-![](public/images/6.png)
+---
 
-![](public/images/7.png)
+### 🛒 3. Add to Cart  
+![Add to Cart](public/images/3.png)
 
-![](public/images/8.png)
+---
+
+### 📋 4. Cart View  
+![Cart View](public/images/4.png)
+
+---
+
+### ✅ 5. Checkout  
+![Checkout](public/images/5.png)
+
+---
+
+### 🧾 6. My Orders  
+![My Orders](public/images/6.png)
+
+---
+
+### 🔐 7. Login Page  
+![Login](public/images/7.png)
+
+---
+
+### ✍️ 8. Signup Page  
+![Signup](public/images/8.png)
+
+</details>
 
 
 ---
