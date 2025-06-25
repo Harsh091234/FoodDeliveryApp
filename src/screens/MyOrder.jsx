@@ -7,7 +7,7 @@ export default function MyOrder() {
     const [orderData, setorderData] = useState(null)
 
     const fetchMyOrder = async () => {
-        const res = await fetch("http://localhost:3000/api/myorderdata", {
+        const res = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/myorderdata", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
