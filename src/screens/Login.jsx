@@ -8,7 +8,7 @@ const Login = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const handleUserSignup = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://fooddeliveryapp-ngmw.onrender.com", {
+    const response = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
