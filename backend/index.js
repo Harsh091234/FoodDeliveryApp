@@ -7,7 +7,7 @@ const userRouter = require("./routes/createuser");
 const displayRouter = require("./routes/displaydata");
 const orderRouter = require("./routes/orderData");
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://food-delivery-app-three-mu.vercel.app/");
+    res.setHeader("Access-Control-Allow-Origin", "https://food-delivery-app-three-mu.vercel.app");
     res.setHeader(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
