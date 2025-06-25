@@ -16,7 +16,7 @@ if (!data || data.length === 0) {
 
 const handleCheckOut = async() => {
   let userEmail = localStorage.getItem("userEmail");
-  let response = await fetch("http://localhost:3000/api/orderdata", {
+  let response = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/orderdata", {
     method: "POST",
     headers: {
       "Content-Type" : "application/json"
