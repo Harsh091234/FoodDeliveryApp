@@ -20,7 +20,7 @@ const Home = () => {
   const data = useCart()
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:3000/api/fooddata", {
+    let response = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/fooddata", {
       method: "POST",
       headers: {
         'Content-Type': "application/json"
