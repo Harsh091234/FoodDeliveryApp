@@ -4,9 +4,9 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
-  const BASE_URL =
-    import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_REMOTE_URL; 
-
+  const BASE_URL = import.meta.env.DEV
+    ? import.meta.env.VITE_API_LOCAL_URL
+    : import.meta.env.VITE_API_REMOTE_URL;
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const handleUserSignup = async (e) => {

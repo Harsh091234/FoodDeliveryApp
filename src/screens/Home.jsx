@@ -20,9 +20,9 @@ const Home = () => {
   const data = useCart()
 
   const loadData = async () => {
-    const BASE_URL =
-      import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_REMOTE_URL; 
-
+    const BASE_URL = import.meta.env.DEV
+      ? import.meta.env.VITE_API_LOCAL_URL
+      : import.meta.env.VITE_API_REMOTE_URL;
 
     let response = await fetch(`${BASE_URL}/api/fooddata`, {
       method: "POST",

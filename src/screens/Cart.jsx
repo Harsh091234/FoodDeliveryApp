@@ -15,8 +15,9 @@ if (!data || data.length === 0) {
 }
 
 const handleCheckOut = async() => {
-  const BASE_URL =
-    import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_REMOTE_URL; 
+  const BASE_URL = import.meta.env.DEV
+    ? import.meta.env.VITE_API_LOCAL_URL
+    : import.meta.env.VITE_API_REMOTE_URL; 
 
   let userEmail = localStorage.getItem("userEmail");
   let response = await fetch(`${BASE_URL}/api/orderdata`, {

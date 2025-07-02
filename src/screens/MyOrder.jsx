@@ -3,8 +3,9 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 export default function MyOrder() {
-    const BASE_URL =
-      import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_REMOTE_URL; 
+    const BASE_URL = import.meta.env.DEV
+      ? import.meta.env.VITE_API_LOCAL_URL
+      : import.meta.env.VITE_API_REMOTE_URL;
 
     const [orderData, setorderData] = useState(null)
 
