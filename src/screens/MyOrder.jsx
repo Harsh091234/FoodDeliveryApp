@@ -3,11 +3,13 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 export default function MyOrder() {
+    const BASE_URL =
+      import.meta.env.VITE_API_LOCAL_URL || import.meta.env.VITE_API_REMOTE_URL; 
 
     const [orderData, setorderData] = useState(null)
 
     const fetchMyOrder = async () => {
-        const res = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/myorderdata", {
+        const res = await fetch(`${BASE_URL}/api/myorderdata`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
