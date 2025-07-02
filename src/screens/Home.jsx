@@ -23,8 +23,8 @@ const Home = () => {
     const BASE_URL = import.meta.env.DEV
       ? import.meta.env.VITE_API_LOCAL_URL
       : import.meta.env.VITE_API_REMOTE_URL;
-
-    let response = await fetch(`${BASE_URL}/api/fooddata`, {
+    console.log("base url" + {BASE_URL})
+    let response = await fetch(`https://${BASE_URL}/api/fooddata`, {
       method: "POST",
       headers: {
         'Content-Type': "application/json"

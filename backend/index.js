@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const PORT = process.env.PORT | 3000;
+const PORT = process.env.PORT || 3000;
 const connectToMongodb  = require("./mongoconnect");
 const userRouter = require("./routes/createuser");
 const displayRouter = require("./routes/displaydata");
