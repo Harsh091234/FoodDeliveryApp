@@ -20,11 +20,10 @@ const Home = () => {
   const data = useCart()
 
   const loadData = async () => {
-    const BASE_URL = import.meta.env.DEV
-      ? import.meta.env.VITE_API_LOCAL_URL
-      : import.meta.env.VITE_API_REMOTE_URL;
+    // const BASE_URL = "http://localhost:3000";
+    const BASE_URL = "fooddeliveryapp-ngmw.onrender.com";
     console.log("base url" + {BASE_URL})
-    let response = await fetch(`https://${BASE_URL}/api/fooddata`, {
+    let response = await fetch(`${BASE_URL}/api/fooddata`, {
       method: "POST",
       headers: {
         'Content-Type': "application/json"

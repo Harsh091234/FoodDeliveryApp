@@ -7,8 +7,9 @@ const userRouter = require("./routes/createuser");
 const displayRouter = require("./routes/displaydata");
 const orderRouter = require("./routes/orderData");
 app.use((req, res, next) => {
-  const allowedOrigin = process.env.FRONTEND_URI_LOCAL ||
-   process.env.FRONTEND_URI_REMOTE;
+ 
+//  const allowedOrigin="http://localhost:5173"
+const allowedOrigin="https://food-delivery-app-three-mu.vercel.app"
 
   // Handle preflight requests
   res.header("Access-Control-Allow-Origin", allowedOrigin);
