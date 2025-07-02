@@ -1,15 +1,13 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT | 3000;
 const connectToMongodb  = require("./mongoconnect");
 const userRouter = require("./routes/createuser");
 const displayRouter = require("./routes/displaydata");
 const orderRouter = require("./routes/orderData");
 app.use((req, res, next) => {
- 
-
-const allowedOrigin="https://food-delivery-app-three-mu.vercel.app"
+  const allowedOrigin = "https://food-delivery-app-three-mu.vercel.app";
 
   // Handle preflight requests
   res.header("Access-Control-Allow-Origin", allowedOrigin);
