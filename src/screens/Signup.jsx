@@ -5,15 +5,11 @@ import { Link, useNavigate } from 'react-router-dom'
 
     
 const Signup = () => {
-  const BASE_URL = import.meta.env.DEV
-    ? import.meta.env.VITE_API_LOCAL_URL
-    : import.meta.env.VITE_API_REMOTE_URL;
-
   const navigate = useNavigate();
   const [credentials, setCredentials]  = useState({name: "", email: "", password: "", geolocation: ""});
   const handleUserSignup = async(e) => {
         e.preventDefault();
-        const response = await fetch(`${BASE_URL}/api/createuser`, {
+        const response = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/createuser", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

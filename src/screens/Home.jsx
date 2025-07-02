@@ -20,10 +20,7 @@ const Home = () => {
   const data = useCart()
 
   const loadData = async () => {
-    // const BASE_URL = "http://localhost:3000";
-    const BASE_URL = "fooddeliveryapp-ngmw.onrender.com";
-    console.log("base url" + {BASE_URL})
-    let response = await fetch(`${BASE_URL}/api/fooddata`, {
+    let response = await fetch("https://fooddeliveryapp-ngmw.onrender.com/api/fooddata", {
       method: "POST",
       headers: {
         'Content-Type': "application/json"
