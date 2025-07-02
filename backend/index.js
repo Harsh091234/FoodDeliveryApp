@@ -8,7 +8,7 @@ const displayRouter = require("./routes/displaydata");
 const orderRouter = require("./routes/orderData");
 app.use((req, res, next) => {
   const allowedOrigin = process.env.FRONTEND_URI_LOCAL ||
-   FRONTEND_URI_REMOTE;
+   process.env.FRONTEND_URI_REMOTE;
 
   // Handle preflight requests
   res.header("Access-Control-Allow-Origin", allowedOrigin);
